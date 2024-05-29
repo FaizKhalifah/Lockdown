@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-*{
-    font-family: 'inter';
-    margin: 0px;
-    padding: 0px;
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -14,103 +15,114 @@ body{
     justify-content: center;
 }
 
-nav{
+nav {
     background-color: #003C43;
     width: 100%;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     list-style-type: none;
-    padding: 1rem
+    padding: 1rem;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: white;
     transition: 0.3s;
     padding: 2rem;
 }
 
-nav a:hover{
+nav a:hover {
     color: #003C43;
     background-color: white;
 }
 
-main article{
+.toggle-button {
+    display: none;
+    background-color: #003C43;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+main article {
     width: 100%;
     display: flex;
     flex-direction: row;
     gap: 0rem;
+    padding: 1rem;
 }
 
-article span{
+article span {
     padding: 3rem;
     text-align: left;
 }
 
-article .image{
+article .image {
     text-align: center;
 }
 
-article li{
+article li {
     font-size: 1.5rem;
 }
 
-.tips img{
+.tips img {
     width: 30rem;
 }
-.image a{
+
+.image a {
     text-decoration: none;
     color: #34252F;
 }
 
-main article img{
+main article img {
     width: 70%;
 }
 
-.pengenalanText h1{
+.pengenalanText h1 {
     font-size: 5rem;
     margin: 2rem 0rem;
 }
 
-.pengenalanText p{
+.pengenalanText p {
     font-size: 2rem;
 }
 
-.definitionText h1, .urgensiText h1, .tipsText h1{
+.definitionText h1, .urgensiText h1, .tipsText h1 {
     font-size: 3rem;
 }
 
-.definitionText p, .urgensiText p, .tipsText p{
+.definitionText p, .urgensiText p, .tipsText p {
     text-align: justify;
     font-size: 1.5rem;
     margin: 1.5rem 0rem;
 }
 
-.cases{
+.cases {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.caseText h1{
+.caseText h1 {
     text-align: center;
     font-size: 3rem;
 }
 
-.caseText p{
+.caseText p {
     text-align: center;
     font-size: 1.5rem;
     margin: 2rem;
 }
 
-iframe{
+iframe {
     text-align: center;
     width: 70rem;
     height: 20rem;
@@ -118,17 +130,48 @@ iframe{
     border: none;
 }
 
-
-
-.closing h1{
+.closing h1 {
     font-size: 3rem;
 }
-.closing{
+
+.closing {
     text-align: center;
     margin: 2rem;
 }
 
-.closing>span{
+.closing > span {
     width: 100%;
     text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    .toggle-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    main article {
+        flex-direction: column;
+    }
+
+    main article img {
+        width: 100%;
+    }
+
+    iframe {
+        width: 90%;
+    }
 }

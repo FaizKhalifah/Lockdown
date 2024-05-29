@@ -8,29 +8,29 @@
     <link rel="icon" type="image/x-icon" href="images/Sync.png">
 </head>
 <body>
-    <nav>
+    <nav id="main-nav">
         <ul>
-            <li><a href="#">Pengenalan</a></li>
-            <li><a href="#">Definisi</a></li>
-            <li><a href="#">Urgensi</a></li>
-            <li><a href="#">Kasus</a></li>
-            <li><a href="#">Tips</a></li>
+            <li><a href="#pengenalan">Pengenalan</a></li>
+            <li><a href="#definisi">Definisi</a></li>
+            <li><a href="#urgensi">Urgensi</a></li>
+            <li><a href="#cases">Kasus</a></li>
+            <li><a href="#tips">Tips</a></li>
         </ul>
     </nav>
     <main>
-        <article class="pengenalan">
+        <article class="pengenalan" id="pengenalan">
             <span class="pengenalanText">
-            <h1>Halo SyncFriends</h1>
-            <p>Dalam kesempatan ini, kami akan menerangkan kepada para syncfriends sekalian
-                mengenai urgensi pengetahuan cybersecurity pada kehidupan sehari-hari.
-            </p>
+                <h1>Halo SyncFriends</h1>
+                <p>Dalam kesempatan ini, kami akan menerangkan kepada para syncfriends sekalian
+                    mengenai urgensi pengetahuan cybersecurity pada kehidupan sehari-hari.
+                </p>
             </span>
             <span class="image">
                 <img src="images/superImage.jpg" alt="super image"><br>
                 <a href="http://www.freepik.com">Designed by Freepik</a>
             </span>
         </article>
-        <article class="definisi">
+        <article class="definisi" id="definisi">
             <span class="image">
                 <img src="images/definitionImage.jpg" alt=""><br>
                 <a href="http://www.freepik.com">Designed by Freepik</a>
@@ -47,7 +47,7 @@
                 <p>Source : IBM</p>
             </span>
         </article>
-        <article class="urgensi">
+        <article class="urgensi" id="urgensi">
             <span class="urgensiText">
                 <h1>Urgensi Cybersecurity</h1>
                 <p>Kita saat ini hidup di jaman yang serba digital. Dimana berbagai perangkat elektronik saling
@@ -64,7 +64,7 @@
                 <a href="http://www.freepik.com">Designed by Freepik</a>
             </span>
         </article>
-        <article class="cases">
+        <article class="cases" id="cases">
             <span class="caseText">
                 <h1>Kasus cyberattack</h1>
                 <p>Telah ada beberapa <i>real case</i> serangan cyber yang terjadi di dunia mulai dari phishing,
@@ -75,7 +75,7 @@
                 <iframe src="https://www.theregister.com/2024/05/22/london_drugs_ransomware/" frameborder="0"></iframe>
             </span>
         </article> 
-        <article class="tips">
+        <article class="tips" id="tips">
             <span class="tipsText">
                 <h1>Tips</h1>
                 <p>Terdapat beberapa cara agar kita bisa mengurangi resiko serangan siber nih, sobat sync.
@@ -100,6 +100,6 @@
             </span>
         </article>
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
